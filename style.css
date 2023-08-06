@@ -1,6 +1,12 @@
-/* * {
+* {
+	border: 0px solid black;
+}
+
+/*
+* {
 	border: 1px solid red;
-} */
+}*/
+
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
 body {
 	display: flex;
@@ -70,7 +76,7 @@ a:hover {
 }
 
 .top {
-	padding: 40px 0px;
+	padding: 10px 0px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -283,7 +289,7 @@ button:hover {
 		scale: 0.9;
 	}
 	.header {
-		scale: 0.75;
-		font-size: 24px;
+		scale: 0.72;
+		font-size: 22px;
 	}
 }
