@@ -1,0 +1,267 @@
+/* * {
+	border: 1px solid red;
+} */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	max-width: 100vw;
+	align-content: center;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0;
+	font-family: "JetBrains Mono", monospace;
+	flex-flow: column nowrap;
+}
+
+.dark {
+	background-color: #033a5f;
+	color: #fffdfa;
+}
+
+.light {
+	background-color: #fffdfa;
+	color: #033a5f;
+}
+
+.header {
+	padding: 20px 12px;
+	margin: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	max-height: 100px;
+	font-size: 30px;
+	/* background-color: #1f2937;
+	color: white; */
+	font-weight: 900;
+}
+
+ul {
+	display: flex;
+	gap: 24px;
+	font-size: 18px;
+	justify-content: space-between;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	transition: transform 0.1s ease;
+	display: inline-block;
+}
+
+.dark a {
+	color: #f7f4f0;
+}
+
+.light a {
+	color: #000000;
+}
+
+a:hover {
+	/* Change font size on hover */
+	/* font-size: 18px; */
+	opacity: 75%;
+	transform: scale(1.1, 1.1);
+}
+
+.top {
+	padding: 60px 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 64px;
+	/* background-color: #1f2937;
+	color: white; */
+	flex: 10;
+}
+
+.top p {
+	line-height: 24px;
+	font-size: 18px;
+}
+
+.intro {
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+}
+
+button {
+	flex: 0.3 0 auto;
+	max-width: 100px;
+	font-weight: bold;
+	height: 30px;
+	border-radius: 5px;
+	background-color: #ffd166;
+	border: 1px solid white;
+	color: white;
+	padding: 5px 20px;
+	transition: 0.3s;
+}
+
+button:hover {
+	cursor: pointer;
+	opacity: 0.75;
+}
+
+.bigimage {
+	max-width: 400px;
+	max-height: 200px;
+}
+
+.faces {
+	margin: 0px;
+}
+
+.facesTitle {
+	margin: 24px 0px;
+	font-size: 36px;
+	font-weight: 900;
+	text-align: center;
+}
+
+.theFaces {
+	flex: 8;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 8px 0px 32px;
+	gap: 40px;
+	flex-wrap: wrap;
+}
+
+.square {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	gap: 20px;
+}
+
+.square img {
+	/* max-width: 200px; */
+	max-height: 200px;
+	padding: 10px;
+	margin: 0px 25px;
+	margin-bottom: 8px;
+	border: 4px solid #ffd166;
+	border-radius: 10px;
+	transition: transform 0.1s;
+}
+.square img:hover {
+	transform: scale3d(1.2, 1.2, 1);
+}
+.square p {
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 10px;
+	width: 200px;
+	font-size: 20px;
+}
+
+.third {
+	/* background-color: #e5e7eb; */
+	/* background-image: url("https://thumbs.dreamstime.com/z/young-disabled-woman-sitting-wheelchair-man-repair-wheel-love-family-human-relations-disability-boyfriend-handicapped-148950963.jpg");
+	background-attachment: fixed; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	flex-wrap: wrap;
+	padding: 32px;
+	margin: 0px;
+}
+
+.third-container {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 1000px;
+}
+
+.quote {
+	font-weight: lighter;
+	font-size: 36px;
+	font-style: italic;
+	/* color: #1f2937; */
+}
+
+.name {
+	font-size: 20px;
+	align-self: flex-end;
+}
+
+.fourth {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.call {
+	width: 800px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 20px 40px;
+	padding: 30px 50px;
+	/* background-color: #3882f6;
+	color: white; */
+	border-radius: 16px;
+}
+
+.call div,
+.call p,
+.call button {
+	margin: 0;
+	padding: 0;
+}
+
+.call div .good {
+	font-weight: 900;
+	font-size: 24px;
+}
+
+.call div .bad {
+	font-weight: normal;
+}
+
+.footer {
+	flex: 0 1 auto;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 24px;
+	max-height: 48px;
+}
+
+.links {
+	display: flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	margin: 0px;
+	flex: 1;
+	max-height: 24px;
+}
+
+.linksImage {
+	max-height: 15px;
+	margin: 0px;
+	padding: 0px;
+}
