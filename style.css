@@ -17,6 +17,7 @@ body {
 	box-sizing: border-box;
 	margin: 0px;
 	padding: 0;
+	gap: 0;
 	/* font-family: "JetBrains Mono", monospace; */
 	font-family: DM Sans, sans-serif;
 
@@ -26,27 +27,32 @@ body {
 }
 
 .header {
-	padding: 20px 12px;
-	margin: 0px 100px;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: center;
 	max-height: 100px;
 	font-size: 30px;
 	/* background-color: #1f2937;
 	color: white; */
 	font-weight: 700;
 	text-align: center;
+	width: 100%;
+	align-self: center;
+}
+
+.logo {
+	color: white;
 }
 
 ul {
 	display: flex;
-	gap: 40px;
+	gap: 10%;
 	font-size: 14px;
 	justify-content: space-between;
 	list-style: none;
-	margin: 10%;
+	/* margin: 10%; */
 	padding: 0;
+	align-items: center;
 }
 
 a {
@@ -68,7 +74,8 @@ li a:hover {
 }
 
 .top {
-	padding: 1.5% 0px 1.5% 0px;
+	margin: 1.5% 0%;
+	padding: 1.5% 0px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -83,7 +90,7 @@ li a:hover {
 
 .top p,
 .top h1 {
-	margin: 10px 32px;
+	margin: 1.5% 2%;
 }
 
 .top p {
@@ -99,6 +106,7 @@ li a:hover {
 	justify-content: center;
 	align-items: center;
 	width: 600px;
+	margin: 0;
 }
 
 button {
@@ -125,10 +133,12 @@ button:hover {
 	border-radius: 3%;
 	max-width: 400px;
 	max-height: 200px;
+	margin: 2% 2%;
 }
 
 .faces {
 	margin: 0px;
+	padding: 0px;
 }
 
 .facesTitle {
@@ -144,7 +154,7 @@ button:hover {
 	flex-direction: row;
 	justify-content: center;
 	align-items: flex-start;
-	padding: 8px 0px 32px;
+	padding: 1% 0px;
 	gap: 10px;
 	flex-wrap: wrap;
 }
@@ -191,8 +201,7 @@ button:hover {
 	align-items: center;
 	flex: 1;
 	flex-wrap: wrap;
-	padding: 32px;
-	margin: 0px;
+	padding: 2% 2%;
 }
 
 .third-container {
@@ -210,6 +219,7 @@ button:hover {
 	font-size: 36px;
 	font-style: italic;
 	/* color: #1f2937; */
+	margin: 0;
 }
 
 .name {
@@ -240,6 +250,7 @@ button:hover {
 .fourthGood {
 	margin: 1%;
 	padding: 0;
+	text-align: center;
 }
 
 .fourthGood {
@@ -297,5 +308,11 @@ button:hover {
 	.header {
 		scale: 0.72;
 		font-size: 22px;
+	}
+	.bigimage {
+		scale: 0.9;
+	}
+	.square {
+		scale: 0.9;
 	}
 }
