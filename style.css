@@ -2,10 +2,9 @@
 	border: 0px solid black;
 }
 
-/*
-* {
+/* * {
 	border: 1px solid red;
-}*/
+} */
 
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
 body {
@@ -27,42 +26,47 @@ body {
 }
 
 .header {
+	width: 960px;
+	max-width: 100%;
+	padding: 0px;
+	/* margin-top: 1%; */
+	margin: 1% auto;
+	/* align-self: center; */
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	max-height: 100px;
-	font-size: 30px;
-	/* background-color: #1f2937;
-	color: white; */
-	font-weight: 700;
-	text-align: center;
-	width: 100%;
-	align-self: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .logo {
 	color: white;
+	font-size: 24px;
+	font-weight: bolder;
+	align-self: center;
+	max-width: 100%;
 }
 
-ul {
-	display: flex;
-	gap: 10%;
-	font-size: 14px;
-	justify-content: space-between;
-	list-style: none;
-	/* margin: 10%; */
+.headerNav ul {
+	margin: 0.5em;
+	text-align: center;
 	padding: 0;
-	align-items: center;
+}
+.headerNav li {
+	display: inline;
+}
+.headerNav a {
+	display: inline-block;
+	padding: 0.5em 1.5em;
 }
 
 a {
 	text-decoration: none;
 	transition: transform 0.1s ease;
-	display: inline-block;
 	color: lightgrey;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	align-self: center;
 }
 
 li a:hover {
@@ -74,7 +78,7 @@ li a:hover {
 }
 
 .top {
-	margin: 1.5% 0%;
+	margin: 0% 0%;
 	padding: 1.5% 0px;
 	display: flex;
 	flex-direction: row;
@@ -96,6 +100,7 @@ li a:hover {
 .top p {
 	line-height: 24px;
 	font-size: 16px;
+	text-align: center;
 	color: lightgrey;
 }
 
@@ -105,6 +110,7 @@ li a:hover {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 	width: 600px;
 	margin: 0;
 }
@@ -267,7 +273,7 @@ button:hover {
 	/* align-self: center; */
 	text-align: center;
 	width: 200px;
-	height: 70px;
+	height: 60px;
 }
 
 .footer {
@@ -277,7 +283,7 @@ button:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 24px;
+	padding: 1%;
 	max-height: 48px;
 }
 
@@ -290,6 +296,20 @@ button:hover {
 	flex: 1;
 	max-height: 24px;
 }
+.links ul {
+	display: flex;
+	gap: 10%;
+	font-size: 14px;
+	justify-content: space-between;
+	list-style: none;
+	/* margin: 10%; */
+	padding: 0;
+	align-items: center;
+}
+/* 
+.links li {
+	display: inline;
+} */
 
 .linksImage {
 	max-height: 15px;
@@ -306,8 +326,8 @@ button:hover {
 		scale: 0.9;
 	}
 	.header {
-		scale: 0.72;
-		font-size: 22px;
+		justify-content: space-around;
+		margin-top: 7%;
 	}
 	.bigimage {
 		scale: 0.9;
