@@ -303,6 +303,20 @@ button:hover {
 	height: 60px;
 }
 
+
+.sponsers {
+	margin: 0px;
+	padding: 10px 0px;
+}
+
+.sponsersTitle {
+	margin: 24px 0px;
+	font-size: 36px;
+	font-weight: 900;
+	text-align: center;
+}
+
+
 .footer {
 	color: lightgrey;
 	flex: 0 1 auto;
