@@ -110,6 +110,11 @@ li a:hover {
 	width: 100%;
 }
 
+/* .top img{
+	margin-top: 0px;
+	margin-bottom: 0px;
+} */
+
 .top p,
 .top h1 {
 	margin: 1.5% 2%;
@@ -181,7 +186,7 @@ button:hover {
 }
 
 .theFaces {
-	flex: 8;
+	flex: 1;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -213,14 +218,14 @@ button:hover {
 	transition: transform 0.1s;
 }
 .square img:hover {
-	transform: scale3d(1.1, 1.1, 1);
+	transform: scale3d(1.07, 1.07, 1);
 }
 .square p {
 	padding: 0px;
 	margin: 0px;
-	margin-bottom: 10px;
+	/* margin-bottom: 10px; */
 	width: 200px;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .third {
@@ -264,6 +269,7 @@ button:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: 0;
 }
 
 .call {
@@ -305,15 +311,58 @@ button:hover {
 
 
 .sponsers {
-	margin: 0px;
+	margin: 1% 0;
 	/* padding: 10px 0px; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .sponsersTitle {
-	margin: 24px 0px;
+	margin: 0.5% 0px;
 	font-size: 36px;
 	font-weight: 900;
 	text-align: center;
+}
+
+.advertText{
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+	opacity: 0.69;
+	margin: 0px 0px 8px 0px;
+} 
+
+.diamond {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0;
+	gap: 2px;
+}
+
+.diamond img {
+	/* max-width: 200px; */
+	max-height: 160px;
+	padding: 4px;
+	margin: 0px 80px;
+	margin-bottom: 8px;
+	border: 4px solid #b9f2ff;
+	border-radius: 10%;
+	transition: transform 0.1s;
+}
+.diamond img:hover {
+	transform: scale3d(1.07, 1.07, 1);
+}
+.diamond p {
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 10px;
+	width: 200px;
+	font-size: 16px;
 }
 
 
@@ -379,6 +428,9 @@ button:hover {
 	.square {
 		scale: 0.9;
 	}
+	/* .square img{
+		max-height: 120px;
+	} */
 	.links ul {
 		width: 30%;
 		margin: 3% 0;
