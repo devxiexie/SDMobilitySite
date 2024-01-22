@@ -68,7 +68,7 @@ body {
 .headerNav li {
 	/* display: inline; */
 	/* text-decoration: none; */
-	padding-top: 2%;
+	padding-top: 1.32%;
 }
 .headerNav a {
 	display: inline-block;
@@ -80,7 +80,8 @@ body {
 a {
 	text-decoration: none;
 	transition: transform 0.1s ease;
-	color: rgb(226, 226, 226);
+	/* color: rgb(226, 226, 226); */
+	color: white;
 	display: flex;
 	align-items: center;
 	justify-content: center;
